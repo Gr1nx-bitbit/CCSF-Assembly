@@ -1,0 +1,4 @@
+The program outputs the values that have been loaded into the register $a0. The syscall command looks
+at the $v0 register for a command number, in the first case it is a 4 which is the command for print_string,
+and in the second case, it is 10, which signals the program to exit. The value loaded into the register is
+defined in msg under the .data directive which is then used as an argument to the first syscall. 
