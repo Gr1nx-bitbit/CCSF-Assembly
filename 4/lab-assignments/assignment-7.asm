@@ -19,8 +19,7 @@
 
     reverse5:
         # push characters onto the stack
-        # load characters into registers
-        lbu $a0, char0
+        lbu $a0, char0 # load characters into registers
         lbu $a1, char1
         lbu $a2, char2
         lbu $a3, char3
@@ -40,7 +39,7 @@
         sw $s1, ($sp) # push 'Y' onto the stack
 
         # print characters in the stack + pop the character and incermement the stack pointer
-        li $v0, 11 # code to print a character
+        li $v0, 11 # system code to print a character
         lw $a0, ($sp) # load last character stored on the stack
         syscall
         addiu $sp, $sp, 4 # increment the stack pointer so we go back one character
