@@ -1,6 +1,5 @@
 .data
     tenitis: .word 3, 17, 12, 9, 36, 102, 81, 500, -1, 9
-    print: .word 0
 
 .globl main
 
@@ -46,10 +45,6 @@
             li $t0, 1
         
         end:
-            li $v0, 1
-            sw $t0, print
-            lw $a0, print
-            syscall
 
             li $v0, 10
             syscall
