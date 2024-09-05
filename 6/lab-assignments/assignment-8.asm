@@ -1,7 +1,9 @@
+# Victor Kozel
+# Lab Assignment 8
+
 .globl main
 
 .text
-    # result is what is returned to so that variable will be register $v1 since we will need $v0 to end the program
 
     main:
         li $a0, 7
